@@ -1,0 +1,17 @@
+{
+  "name": "fake-ad-ldap-server",
+  "version": "0.1.0",
+  "description": "Fake LDAP ActiveDirectory interface server",
+  "main": "index.js",
+  "author": "Felipe Coury <felipe.coury@gmail.com>",
+  "license": "MIT",
+  "bin": {
+    "fake-ad-server": "./index.js"
+  },
+  "dependencies": {
+    "handlebars": "4.0.11",
+    "kexec": "3.0.0",
+    "mustache": "2.3.0",
+    "tmp": "0.0.33"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "domain": "gistia",
+  "users": [
+    { "name": "Cognito Auth",          "username": "cognito.auth",          "password": "teste", "groups": [ "Cognito_Admin" ] },
+    { "name": "Felipe Coury",          "username": "felipe",                "password": "teste", "groups": [ "Cognito_Admin" ] },
+    { "name": "Vinicius Oliveria",     "username": "vinicius.oliveira",     "password": "teste", "groups": [ "Cognito_Admin" ] },
+    { "name": "Fabricio Lefundes",     "username": "fabricio.lefundes",     "password": "teste", "groups": [ "Cognito_Admin" ] },
+    { "name": "Guilherme Vasconcelos", "username": "guilherme.vasconcelos", "password": "teste", "groups": [ "Cognito_Admin" ] }
+  ]
+}

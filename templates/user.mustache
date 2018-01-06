@@ -1,0 +1,13 @@
+dn: uid={{username}},ou=users,dc={{domain}},dc=com
+objectClass: top
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: simulatedMicrosoftSecurityPrincipal
+objectCategory: User
+cn: {{name}}
+sn: {{username}}
+uid: {{username}}
+sAMAccountName: {{username}}@{{domain}}.com
+userPassword: {{password}}
+{{#groups}}memberOf: {{.}}
+{{/groups}}

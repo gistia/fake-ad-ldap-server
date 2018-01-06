@@ -1,0 +1,7 @@
+dn: cn={{name}},ou=roles,dc=gistia,dc=com
+objectClass: top
+objectClass: group
+groupType: -1
+cn: {{name}}
+{{#members}}member: uid={{.}},ou=users,dc={{domain}},dc=com
+{{/members}}
