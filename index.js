@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const fs = require('fs');
 const path = require('path');
 const tmp = require('tmp');
@@ -31,4 +33,4 @@ const renderLdif = (config) => {
 const contents = renderLdif(process.argv[2]);
 const ldif = tmp.tmpNameSync();
 fs.writeFileSync(ldif, contents, 'utf8');
-kexec('java', ['-jar', 'ldap-server.jar', ldif]);
+kexec('java', ['-jar', path.join(__dirname, 'ldap-server.jar'), ldif]);
